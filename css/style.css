@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Noto Sans", sans-serif;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.logo {
+    display: block;
+    margin: auto;
+    height: 8vh;
+}
+
+h1 {
+    margin-top: 1vh;
+    font-size: 1.3em;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: #fff;
+}
+
+.container {
+    max-width: 955px;
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.6);
+    border: 2px solid darkgray;
+    border-radius: 13px;
+    margin: auto;
+    height: 58vh;
+    padding: 33px;
+    overflow-y: auto;
+    margin-bottom: 23px;
+    background-color: RGBA(0, 0, 0, 0.3);
+    backdrop-filter: blur(5px);
+}
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+.container {
+    scrollbar-width: thin;
+    scrollbar-color: #b8b8b8 #00000000;
+}
+
+/* Chrome, Edge, and Safari */
+.container::-webkit-scrollbar {
+    width: 8px;
+}
+
+.container::-webkit-scrollbar-track {
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: #00000000;
+}
+
+.container::-webkit-scrollbar-thumb {
+    background-color: #b8b8b8;
+    border-radius: 8px;
+    /* border: 3px solid #ffffff; */
+}
+
+.message {
+    min-width: 24%;
+    max-width: 80%;
+    padding: 0 10px;
+    margin: 17px 12px;
+    /* border: 2px solid black; */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+}
+
+.message h6 {
+    color: #1cb5e0;
+}
+
+.message p {
+    padding: 5px 0;
+    text-align: justify;
+}
+
+.left {
+    background: #000046; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+        to top,
+        #1cb5e0,
+        #000046
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+        to top,
+        #1cb5e0,
+        #000046
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    color: white;
+    float: left;
+    clear: both;
+}
+
+.right {
+    background-color: lightgray;
+    float: right;
+    clear: both;
+}
+
+.left-join {
+    background-color: gray;
+    border-radius: 8px;
+    float: right;
+    clear: both;
+    margin: 7px 37%;
+    text-align: center;
+    font-size: 0.75rem;
+    padding: 0px;
+    /* color: #fff; */
+}
+
+#send-container {
+    display: block;
+    margin: auto;
+    text-align: center;
+    max-width: 1085px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#messageInp {
+    width: 90%;
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+    height: 5vh;
+    font-size: 1.2em;
+    border-color: transparent;
+    border-radius: 40px;
+    outline: none;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.btn {
+    min-height: 5vh;
+    width: 5vh;
+    border-radius: 50%;
+    padding: 0;
+    color: #0c7c1b;
+    margin-left: 5px;
+    cursor: pointer;
+    border-color: transparent;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.btn:hover {
+    color: #fff;
+    background-color: #0c7c1b;
+}
